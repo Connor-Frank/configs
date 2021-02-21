@@ -34,7 +34,7 @@ let g:startify_bookmarks = [
             \ { 'b': '~/.qutebrowser/config.py' },
             \ { 'f': '~/.config/fish/config.fish' },
             \ { 'a': '~/.config/alacritty/alacritty.yml' },
-            \ { 'd': '~/sync/drafts' },
+            \ { 'd': '~/drafts' },
             \ ]
 
 let g:startify_enable_special = 0

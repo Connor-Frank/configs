@@ -27,13 +27,13 @@ function tmx
 end
 funcsave tmx
 
-# you can find this script in my repository "cmake-utils"
-alias build-cmake='~/projects/cmake-utils/build_cmake.sh'
+# you can find this script in my repository "scripts"
+alias build-cmake='~/projects/scripts/cmake/build.sh'
 funcsave build-cmake
 
-# you can find this script in my repository "cmake-utils"
+# you can find this script in my repository "scripts"
 function run-cmake
-  set runfile (~/projects/cmake-utils/run_cmake.sh)
+  set runfile (~/projects/scripts/cmake/run.sh)
   $runfile $argv[1..-1]
 end
 funcsave run-cmake

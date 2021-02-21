@@ -2,3 +2,4 @@ vim/pack
 vim/sessions
 config/nvim.old/pack
 config/nvim/autoload/plugged
+config/fish/functions
