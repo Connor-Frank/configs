@@ -1,5 +1,14 @@
 call plug#begin('~/.vim/pack')
 
+" themes
+Plug 'doums/darcula'
+Plug 'lifepillar/vim-gruvbox8'
+Plug 'arcticicestudio/nord-vim'
+
+" lightline
+Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
+
 " autocompletion of pairs
 Plug 'jiangmiao/auto-pairs'
 " auto commenter

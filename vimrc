@@ -1,15 +1,28 @@
 "
 "   _   __(_)___ ___  __________
 "  | | / / / __ `__ \/ ___/ ___/
-" _| |/ / / / / / / / /  / /__  
-"(_)___/_/_/ /_/ /_/_/   \___/  
-"
+" _| |/ / / / / / / / /  / /__
+"(_)___/_/_/ /_/ /_/_/   \___/
+
+" plugin installs
+source $HOME/.vim/plugin-config/master-install.vim
+" plugin config
+source $HOME/.vim/plugin-config/gitgutter.vim
+source $HOME/.vim/plugin-config/autoformat.vim
+
+" colors
+set background=dark
+set termguicolors
+colorscheme nord
+highlight Comment ctermfg=green
 
 " utf-8
 set encoding=utf-8
 set fileencoding=utf-8
 " line numbers
 set number
+" mouse
+set mouse=a
 " wrap line if too long
 set wrap
 " linebreaks (to not chop words) for pdf and txt and md
@@ -39,10 +52,14 @@ set background=dark
 " autoindenting and smartindenting
 set ai
 set si
-" highlight search
+" searching options
 set hlsearch
+set ignorecase
+set smartcase
 " line number, character, and percentage on bottom right
 set ruler
+" autoreload file
+set autoread
 
 " no bell
 set noeb vb t_vb=
@@ -53,10 +70,13 @@ set splitright
 " nicer vert split separator
 set fillchars+=vert:\        
 
-" colors
-set background=dark
-colorscheme peachpuff
-highlight Comment ctermfg=green
+" space/tab indicator
+set list listchars=tab:>·,trail:~,extends:>,precedes:<,space:·
+
+" file explorer
+let g:netrw_banner = 0
+let g:netrw_browse_split = 2
+let g:netrw_winsize = 15
 
 " cursor in insert mode
 if exists('$TMUX')
@@ -91,11 +111,33 @@ source $HOME/.vim/keymaps.vim
 " switch between header and source files
 source $HOME/.vim/a.vim
 
-" plugin installs
-source $HOME/.vim/plugin-config/master-install.vim
-" plugin config
-source $HOME/.vim/plugin-config/gitgutter.vim
-source $HOME/.vim/plugin-config/autoformat.vim
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ 'mode_map': {
+        \ 'n' : 'VIM'
+        \ },
+      \ 'component_function': {
+        \'gitbranch': 'gitbranch#name'
+        \ }
+      \ }
+
+let g:lightline.active = {
+      \ 'left': [ [ 'mode', 'paste' ],
+      \           [ 'readonly', 'filename', 'modified', 'gitbranch' ] ],
+      \ 'right': [ [ 'lineinfo' ],
+      \            [ 'percent'  ],
+      \            [ 'fileformat'] ]
+      \ }
+
+let g:lightline.tabline = {
+      \ 'left': [ [ 'tabs' ] ],
+      \ 'right': [ [ ] ]
+      \ }
+
+" stuff for lightline
+set noshowmode
+set laststatus=2
+set showtabline=2
 
 " open ranger when vim opens a directory
 "let g:ranger_replace_netrw=1

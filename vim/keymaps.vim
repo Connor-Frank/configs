@@ -1,11 +1,11 @@
 let mapleader = "\<Space>"
 
 " code formatting
-noremap <leader>a :FormatCode<CR>
+noremap <leader>lF :FormatCode<CR>
 
 " open file explorer (ranger) with <leader>f by default
 
-" space-v to toggle tagbar
+" space-e to toggle tagbar
 nmap <leader>e :TagbarToggle<CR>
 
 " leader + c to comment/uncomment
@@ -38,11 +38,6 @@ noremap <leader><Right> :+tabmove<cr>
 " --------------------------------------------------
 
 " splits
-" resize commands
-nnoremap <expr> <leader>' v:count1 + 10 . '<C-w>+'
-nnoremap <expr> <leader>/ v:count1 + 10 . '<C-w>-'
-nnoremap <expr> <leader>. v:count1 + 10 . '<C-w><'
-nnoremap <expr> <leader>, v:count1 + 10 . '<C-w>>'
 
 " use space + j/k/l/h to move between splits, like with cursor
 nnoremap <leader>wj <C-W><C-J>
@@ -53,8 +48,8 @@ nnoremap <leader>wh <C-W><C-H>
 " --------------------------------------------------
 
 " buffer configuration
-" space-qq to close buffer
-nmap <leader>qq :bd<CR>
+" space-w to close buffer
+nmap <leader>w :bd<CR>
 
 " show buffers
 nnoremap <silent> <leader>bb :buffers<CR>
