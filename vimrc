@@ -38,6 +38,8 @@ autocmd BufRead,BufNewFile *.pdf,*.txt,*.md setlocal linebreak
 " spell checker for txt and md
 autocmd BufRead,BufNewFile *.txt,*.md setlocal spell
 autocmd BufRead,BufNewFile CMakeLists.txt setlocal nospell
+" readonly for pdfs
+autocmd BufRead,BufNewFile *.pdf setlocal readonly
 set spellcapcheck=0
 set spelllang=en
 set spellfile=$HOME/sync/vim/spell/en.utf-8.add
