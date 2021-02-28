@@ -83,7 +83,6 @@ set list listchars=tab:>·,trail:~,extends:>,precedes:<,space:·
 
 " file explorer
 let g:netrw_banner = 0
-let g:netrw_browse_split = 2
 let g:netrw_winsize = 15
 
 " cursor in insert mode
@@ -136,7 +135,7 @@ let g:lightline.active = {
 
 let g:lightline.tabline = {
       \ 'left': [ [ 'tabs' ] ],
-      \ 'right': [ [ ] ]
+      \ 'right': [ [ 'buffer' ] ]
       \ }
 
 " stuff for lightline and statusline
@@ -144,6 +143,7 @@ set noshowmode showcmd
 set ruler
 set laststatus=2
 set showtabline=2
+set guioptions-=e
 
 " open ranger when vim opens a directory
 "let g:ranger_replace_netrw=1
