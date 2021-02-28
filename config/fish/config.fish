@@ -1,22 +1,8 @@
 # default editor
 set -Ux EDITOR vim
 
-# for pyenv
-#set PYENV_ROOT $HOME/.pyenv
-#set -x PATH $PYENV_ROOT/shims $PYENV_ROOT/bin $PATH
-#pyenv rehash
-
-# x86 homebrew
-alias xbrew='arch -x86_64 /usr/local/bin/brew'
-funcsave xbrew
-
 # this is an interesting package, if you mess up a command you can type "fuck" in terminal and it guesses at what you meant
 thefuck --alias | source
-
-function fcode
-	~/sync/scripts/./fcode.sh
-end
-funcsave fcode
 
 # creates a tmux session named as the current directory and containing two windows
 function tmx
@@ -58,14 +44,5 @@ funcsave clock
 alias textclock='~/sync/scripts/tty-qlock-1.0.0/./dist/qlock -on-color green'
 funcsave textclock
 
-# this is the way i always run this package, so i created an alias
-alias mac_info='osx-cpu-temp -c -g -f -F'
-funcsave mac_info
-
 # gets rid of the fish greeting
 set fish_greeting
-
-# for iterm
-test -e /Users/connorfrank/.iterm2_shell_integration.fish ; and source /Users/connorfrank/.iterm2_shell_integration.fish ; or true
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
-set -g fish_user_paths "/opt/homebrew/opt/qt/bin" $fish_user_paths
