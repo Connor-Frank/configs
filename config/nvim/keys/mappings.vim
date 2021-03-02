@@ -1,3 +1,6 @@
+command! PU PlugUpdate | PlugUpgrade
+command! Update PlugUpdate | PlugUpgrade | CocUpdate
+
 " Basic Key Mappings
 
 imap <C-h> <C-w>h

@@ -31,7 +31,6 @@ endfunction
 
 let g:startify_bookmarks = [
             \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'b': '~/.qutebrowser/config.py' },
             \ { 'f': '~/.config/fish/config.fish' },
             \ { 'a': '~/.config/alacritty/alacritty.yml' },
             \ { 'd': '~/drafts' },

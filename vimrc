@@ -1,4 +1,4 @@
-"
+"          _
 "   _   __(_)___ ___  __________
 "  | | / / / __ `__ \/ ___/ ___/
 " _| |/ / / / / / / / /  / /__
@@ -11,6 +11,7 @@ source $HOME/.vim/plugin-config/gitgutter.vim
 source $HOME/.vim/plugin-config/autoformat.vim
 
 command! PU PlugUpdate | PlugUpgrade
+command! Vterm vert term
 
 " keymaps
 source $HOME/.vim/keymaps.vim
