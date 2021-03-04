@@ -1,6 +1,6 @@
 vim/pack
 vim/sessions
-vim/.netrwhist
+.netrwhist
 config/nvim.old/pack
 config/nvim/autoload/plugged
 config/fish/functions

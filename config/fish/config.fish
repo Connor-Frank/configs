@@ -1,6 +1,10 @@
 # default editor
 set -Ux EDITOR vim
 
+# alias for the "doom" terminal command
+alias doom='~/.doom-emacs/bin/doom'
+funcsave doom
+
 # this is an interesting package, if you mess up a command you can type "fuck" in terminal and it guesses at what you meant
 thefuck --alias | source
 

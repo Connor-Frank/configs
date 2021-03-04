@@ -2,7 +2,6 @@ command! PU PlugUpdate | PlugUpgrade
 command! Update PlugUpdate | PlugUpgrade | CocUpdate
 
 " Basic Key Mappings
-
 imap <C-h> <C-w>h
 imap <C-j> <C-w>j
 imap <C-k> <C-w>k
@@ -17,13 +16,10 @@ vnoremap < <gv
 vnoremap > >gv
 
 if exists('g:vscode')
-
   " Simulate same TAB behavior in VSCode
   nmap <Tab> :Tabnext<CR>
   nmap <S-Tab> :Tabprev<CR>
-
 else
-
   " Better nav for omnicomplete
   inoremap <expr> <c-j> ("\<C-n>")
   inoremap <expr> <c-k> ("\<C-p>")
@@ -92,7 +88,6 @@ else
       nnoremap <C-Left>  :vertical resize -2<CR>
       nnoremap <C-Right> :vertical resize +2<CR>
   endif
-
 endif
 
 " Better nav for omnicomplete
