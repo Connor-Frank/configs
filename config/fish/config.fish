@@ -18,19 +18,15 @@ end
 funcsave tmx
 
 # you can find this script in my repository "scripts"
-alias build-cmake='~/projects/scripts/cmake/build.sh'
+alias build-cmake='~/scripts/cmake/build.sh'
 funcsave build-cmake
 
 # you can find this script in my repository "scripts"
 function run-cmake
-  set runfile (~/projects/scripts/cmake/run.sh)
+  set runfile (~/scripts/cmake/run.sh)
   $runfile $argv[1..-1]
 end
 funcsave run-cmake
-
-# launch vscode insiders at current directory and close terminal
-alias vs='code-insiders . && exit'
-funcsave vs
 
 # exa is a cooler ls command that is colored and has file/folder icons
 alias show='exa -al --icons'

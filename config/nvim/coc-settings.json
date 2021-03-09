@@ -52,7 +52,7 @@
   "coc.preferences.hoverTarget": "float",
 
   // cpp config
-  "clangd.path": "/opt/homebrew/opt/llvm/bin/clangd",
+  "clangd.path": "/home/connor/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
 
   // python config
   "python.analysis.autoImportCompletions": true,
