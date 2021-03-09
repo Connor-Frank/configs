@@ -28,10 +28,6 @@ function run-cmake
 end
 funcsave run-cmake
 
-# vscode insiders runs on M1 but i want to use it the same way as the traditional one
-alias code='code-insiders'
-funcsave code
-
 # launch vscode insiders at current directory and close terminal
 alias vs='code-insiders . && exit'
 funcsave vs
