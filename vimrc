@@ -9,6 +9,7 @@ source $HOME/.vim/plugin-config/master-install.vim
 " plugin config
 source $HOME/.vim/plugin-config/gitgutter.vim
 source $HOME/.vim/plugin-config/autoformat.vim
+source $HOME/.vim/plugin-config/markdown-preview.vim
 
 command! PU PlugUpdate | PlugUpgrade
 command! Vterm vert term

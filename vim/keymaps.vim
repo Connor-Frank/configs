@@ -6,6 +6,9 @@ noremap <leader>n :noh<CR>
 " code formatting
 noremap <leader>lF :FormatCode<CR>
 
+" markdown preview
+nmap <leader>p <Plug>MarkdownPreview
+
 " open file explorer (ranger) with <leader>f by default
 
 " terminal

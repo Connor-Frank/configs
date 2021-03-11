@@ -45,6 +45,9 @@ Plug 'francoiscabrol/ranger.vim'
 " pdf viewer
 Plug 'makerj/vim-pdf'
 
+" markdown live preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 " git gutter
 Plug 'airblade/vim-gitgutter'
 
